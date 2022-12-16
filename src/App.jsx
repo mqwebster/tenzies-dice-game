@@ -5,18 +5,23 @@ import Dice from './Dice';
 import './App.css';
 
 export default function App() {
-  const diceArray = [];
-  for (let i = 0; i < 10; i++) {
-    const singleDice = {
-      id: '',
-      num: '',
-    };
-    singleDice.id = i + 1;
-    singleDice.num = Math.ceil(Math.random() * 6);
-    diceArray.push(singleDice);
+  const [newDice, setNewDice] = useState(allNewDice());
+
+  function allNewDice() {
+    const diceArray = [];
+    for (let i = 0; i < 10; i++) {
+      const singleDice = {
+        id: '',
+        num: '',
+      };
+      singleDice.id = i + 1;
+      singleDice.num = Math.ceil(Math.random() * 6);
+      diceArray.push(singleDice);
+    }
+    return diceArray;
   }
 
-  const diceElements = diceArray.map((item) => {
+  const diceElements = newDice.map((item) => {
     return <Dice key={item.id} num={item.num} />;
   });
 

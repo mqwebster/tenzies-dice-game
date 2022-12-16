@@ -31,7 +31,7 @@ main {
 
 .dice-grid {
   display: grid;
-  grid-template: 1fr 1fr/1fr 1fr 1fr 1fr 1fr;
+  grid-template: auto auto / repeat(5, 1fr);
   gap: 20px;
 }
 
@@ -49,5 +49,5 @@ main {
   font-size: 24px;
   color: #2b283a;
 
-  border-radius: 4px;
+  border-radius: 8px;
 }

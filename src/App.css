@@ -12,14 +12,30 @@ body {
 }
 
 h1 {
-  font-size: 3.2em;
+  margin: 0;
+  font-size: 32px;
+  font-weight: 700;
   line-height: 1.1;
+
+  color: #2b283a;
+}
+
+p {
+  font-family: Inter, Arial, Helvetica, sans-serif;
+  margin: 0 auto;
+  text-align: center;
+
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: -0.48px;
+
+  color: #4a4e74;
 }
 
 button {
   font-family: Karla, Arial, Helvetica, sans-serif;
 
-  width: 120px;
+  width: 160px;
   height: 52px;
 
   background-color: #5035ff;
@@ -49,6 +65,15 @@ main {
   border-radius: 8px;
 }
 
+.game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  max-width: 300px;
+}
+
 .dice-grid {
   display: grid;
   grid-template: auto auto / repeat(5, 1fr);
@@ -63,11 +88,12 @@ main {
   width: 52px;
   height: 52px;
 
-  background-color: #ffffff;
   filter: drop-shadow(0 2px 2px #00000026);
 
   font-size: 24px;
   color: #2b283a;
 
   border-radius: 8px;
+
+  cursor: pointer;
 }

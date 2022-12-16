@@ -1,0 +1,53 @@
+body {
+  font-family: Karla, Arial, Helvetica, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 100vh;
+
+  margin: 0;
+
+  background-color: #0b2434;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 400px;
+  height: 400px;
+
+  background-color: #f5f5f5;
+
+  border-radius: 8px;
+}
+
+.dice-grid {
+  display: grid;
+  grid-template: 1fr 1fr/1fr 1fr 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.dice {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 52px;
+  height: 52px;
+
+  background-color: #ffffff;
+  filter: drop-shadow(0 2px 2px #00000026);
+
+  font-size: 24px;
+  color: #2b283a;
+
+  border-radius: 4px;
+}
